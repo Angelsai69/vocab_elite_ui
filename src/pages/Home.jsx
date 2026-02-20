@@ -1,3 +1,9 @@
+import { generateLesson } from "../services/api";
+
+async function handleStart() {
+  const data = await generateLesson("Grade 3 adventure story");
+  console.log(data);
+}
 
 import Mascot from "../components/Mascot";
 export default function Home() {
